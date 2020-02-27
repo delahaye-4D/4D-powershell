@@ -1,0 +1,33 @@
+﻿{
+	". launch external process": {
+		"methods": [
+			"launch_external_process"
+		]
+	},
+	". powershell": {
+		"methods": [
+			"powershell_folder",
+			"powershell_path",
+			"powershell_run_script"
+		]
+	},
+	". toolbox": {
+		"methods": [
+			"4D_var_context_restore",
+			"4D_var_context_save",
+			"collection_infinite",
+			"object_infinite",
+			"scanDocument",
+			"scanFolder",
+			"scope",
+			"windows_codepage"
+		]
+	},
+	"# compiler": {
+		"methods": [
+			"Compiler_Methods",
+			"Compiler_Variables"
+		]
+	},
+	"trash": {}
+}

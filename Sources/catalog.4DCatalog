@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="4D-powershell" uuid="F92097E5566ACB4B887F0EA502326B5D" collation_locale="fr">
+	<schema name="DEFAULT_SCHEMA"/>
+	<base_extra __stringCompHash="icu:63.1.0" __keywordBuildingHash="icu:63.1.0" data_file_path="\4D-powershell.4DD">
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>

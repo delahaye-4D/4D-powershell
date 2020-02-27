@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="3">
+	<com.4d>
+		<deployment>
+			<options/>
+		</deployment>
+		<compiler>
+			<options compilation_path="3" error_file="true" symbol_file="true"/>
+			<typage default_for_button="2"/>
+		</compiler>
+		<web>
+			<standalone_server>
+				<configuration port_number="80"/>
+				<options>
+					<web_processes preemptive="true"/>
+					<cache cache_max_size="524288"/>
+				</options>
+			</standalone_server>
+		</web>
+	</com.4d>
+</preferences>
