@@ -47,3 +47,7 @@ C_TEXT:C284(scope ;${1})
 
   //windows_codepage
 C_OBJECT:C1216(windows_codepage ;$0)
+
+  //powershell_script_path
+C_TEXT:C284(powershell_script_path ;$0)
+C_TEXT:C284(powershell_script_path ;$1)

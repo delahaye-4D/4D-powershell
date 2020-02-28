@@ -10,13 +10,13 @@ C_BLOB:C604($binErr)
 C_TEXT:C284($command;$stdIn;$stdOut)
 
 
-$scope:=scope("windows.environ.code_page")
+$scope:=scope ("windows.environ.code_page")
 
 If ($scope.code=Null:C1517)
 	
 	$context:=4D_var_context_save 
 	
-	SET ENVIRONMENT VARIABLE:C812("_4D_OPTION_HIDE_CONSOLE";"true")  //Choisir(Mode compilé;"true";"false"))
+	SET ENVIRONMENT VARIABLE:C812("_4D_OPTION_HIDE_CONSOLE";"true")
 	SET ENVIRONMENT VARIABLE:C812("_4D_OPTION_BLOCKING_EXTERNAL_PROCESS";"true")
 	
 	

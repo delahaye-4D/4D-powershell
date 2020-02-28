@@ -8,7 +8,8 @@
 		"methods": [
 			"powershell_folder",
 			"powershell_path",
-			"powershell_run_script"
+			"powershell_run_script",
+			"powershell_script_path"
 		]
 	},
 	". toolbox": {

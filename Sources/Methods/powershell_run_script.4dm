@@ -1,6 +1,6 @@
 //%attributes = {"invisible":true,"preemptive":"capable"}
 
-C_OBJECT:C1216($0;$result;$2;$parameter)
+C_OBJECT:C1216($0;$result;$2;$parameter;$code_page)
 C_TEXT:C284($1;$script_path)
 C_TEXT:C284($script;$script_param;$filePath)
 
@@ -34,9 +34,9 @@ Case of
 		$script_param:=Replace string:C233($script_param;"}";"`}")
 		$script_param:=Replace string:C233($script_param;",";"`,")
 		
-		$code_page:=windows_codepage 
 		$script:="\""+powershell_path +"\" -ExecutionPolicy BYPASS \""+$script_path+"\" "+$script_param
 		
+		$code_page:=windows_codepage 
 		CONVERT FROM TEXT:C1011($script;$code_page.code_page;$bin)
 		
 		$filePath:=Temporary folder:C486+Generate UUID:C1066+".bat"
@@ -73,7 +73,7 @@ Case of
 		SET ENVIRONMENT VARIABLE:C812("_4D_OPTION_HIDE_CONSOLE";Choose:C955($hidden;"true";"false"))  //Choisir(Mode compilé;"true";"false"))
 		SET ENVIRONMENT VARIABLE:C812("_4D_OPTION_BLOCKING_EXTERNAL_PROCESS";Choose:C955($asynchronous;"false";"true"))
 		
-		$result:=launch_external_process ($filePath)
+		$result:=launch_external_process ($filePath;$parameter)
 		
 		$0:=$result
 		
